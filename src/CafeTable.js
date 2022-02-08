@@ -137,7 +137,7 @@ export default function CafeTable() {
     { field: 'userFirstName', headerName: 'First Name', width: 130, editable: true },
     { field: 'userLastName', headerName: 'Last Name', width: 130, editable: true },
     { field: 'InsideOutside', headerName: 'Inside/Outside', renderEditCell: renderInOutsideEditInputCell, minWidth: 118, editable: true },
-    { field: 'HighLowTable', headerName: 'High/Low Table', minWidth: 123, editable: true },
+    { field: 'HighLowTable', headerName: 'High/Low Table', minWidth: 124, editable: true },
     { field: 'NoOfPeople', headerName: '# of ppl', width: 74, type: 'number', editable: true },
     { field: 'Occassion', headerName: 'Occassion', editable: true },
     { field: 'HouseholdNo', headerName: 'How many groups', minWidth: 142, type: 'number', editable: true },
