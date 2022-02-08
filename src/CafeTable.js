@@ -136,32 +136,32 @@ export default function CafeTable() {
   const columns = [
     { field: 'userFirstName', headerName: 'First Name', width: 130, editable: true },
     { field: 'userLastName', headerName: 'Last Name', width: 130, editable: true },
-    { field: 'InsideOutside', headerName: 'Inside/Outside', renderEditCell: renderInOutsideEditInputCell, width: 130, editable: true },
-    { field: 'HighLowTable', headerName: 'High/Low Table', width: 130, editable: true },
+    { field: 'InsideOutside', headerName: 'Inside/Outside', renderEditCell: renderInOutsideEditInputCell, minWidth: 118, editable: true },
+    { field: 'HighLowTable', headerName: 'High/Low Table', minWidth: 124, editable: true },
     { field: 'NoOfPeople', headerName: '# of ppl', type: 'number', editable: true },
-    { field: 'Occassion', headerName: 'Occassion', width: 130, editable: true },
-    { field: 'HouseholdNo', headerName: 'How many groups', width: 150, type: 'number', editable: true },
-    { field: 'BizTableNo', headerName: 'Assigned table', width: 130, type: 'number', editable: true },
+    { field: 'Occassion', headerName: 'Occassion', editable: true },
+    { field: 'HouseholdNo', headerName: 'How many groups', minWidth: 142, type: 'number', editable: true },
+    { field: 'BizTableNo', headerName: 'Assigned table', minWidth: 120, type: 'number', editable: true },
     {
       field: 'CheckInTime',
       headerName: 'Booking Time',
       type: 'dateTime',
-      width: 200,
+      minWidth: 165,
       editable: true,
     },
     {
       field: 'CheckOutTime',
       headerName: 'Booking End-time',
       type: 'dateTime',
-      width: 200,
+      minWidth: 165,
       editable: true,
     },
     {
       field: 'actions',
       type: 'actions',
       headerName: 'Actions',
-      width: 80,
       cellClassName: 'actions',
+      width: 79,
       getActions: ({ id }) => {
         return [
           <GridActionsCellItem
