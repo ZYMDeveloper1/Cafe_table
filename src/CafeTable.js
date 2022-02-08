@@ -13,6 +13,7 @@ import {
   randomUpdatedDate,
   randomId,
 } from '@mui/x-data-grid-generator';
+import moment from 'moment';
 
 export default function CafeTable() {
   const [rows, setRows] = useState([
@@ -146,14 +147,16 @@ export default function CafeTable() {
       field: 'CheckInTime',
       headerName: 'Booking Time',
       type: 'dateTime',
-      minWidth: 165,
+      valueFormatter: ({ value }) => moment(value).format('MM/DD/YYYY, hh:mm:ss'),
+      minWidth: 145,
       editable: true,
     },
     {
       field: 'CheckOutTime',
       headerName: 'Booking End-time',
       type: 'dateTime',
-      minWidth: 165,
+      valueFormatter: ({ value }) => moment(value).format('MM/DD/YYYY, hh:mm:ss'),
+      minWidth: 145,
       editable: true,
     },
     {
