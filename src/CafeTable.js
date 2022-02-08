@@ -159,9 +159,9 @@ export default function CafeTable() {
     {
       field: 'actions',
       type: 'actions',
-      headerName: 'Actions',
+      headerName: 'Delete',
       cellClassName: 'actions',
-      width: 79,
+      width: 74,
       getActions: ({ id }) => {
         return [
           <GridActionsCellItem
