@@ -19,8 +19,8 @@ export default function CafeTable() {
   const [rows, setRows] = useState([
     {
       id: randomId(),
-      userFirstName: randomTraderName(),
-      userLastName: randomTraderName(),
+      userFirstName: randomTraderName().split(' ')[0],
+      userLastName: randomTraderName().split(' ')[1],
       InsideOutside: 'In',
       HighLowTable: 'Low',
       NoOfPeople: 5,
@@ -32,8 +32,8 @@ export default function CafeTable() {
     },
     {
       id: randomId(),
-      userFirstName: randomTraderName(),
-      userLastName: randomTraderName(),
+      userFirstName: randomTraderName().split(' ')[0],
+      userLastName: randomTraderName().split(' ')[1],
       InsideOutside: 'In',
       HighLowTable: 'Low',
       NoOfPeople: 5,
@@ -45,8 +45,8 @@ export default function CafeTable() {
     },
     {
       id: randomId(),
-      userFirstName: randomTraderName(),
-      userLastName: randomTraderName(),
+      userFirstName: randomTraderName().split(' ')[0],
+      userLastName: randomTraderName().split(' ')[1],
       InsideOutside: 'In',
       HighLowTable: 'Low',
       NoOfPeople: 5,
@@ -58,8 +58,8 @@ export default function CafeTable() {
     },
     {
       id: randomId(),
-      userFirstName: randomTraderName(),
-      userLastName: randomTraderName(),
+      userFirstName: randomTraderName().split(' ')[0],
+      userLastName: randomTraderName().split(' ')[1],
       InsideOutside: 'In',
       HighLowTable: 'Low',
       NoOfPeople: 5,
@@ -71,8 +71,8 @@ export default function CafeTable() {
     },
     {
       id: randomId(),
-      userFirstName: randomTraderName(),
-      userLastName: randomTraderName(),
+      userFirstName: randomTraderName().split(' ')[0],
+      userLastName: randomTraderName().split(' ')[1],
       InsideOutside: 'In',
       HighLowTable: 'Low',
       NoOfPeople: 5,
@@ -135,8 +135,8 @@ export default function CafeTable() {
   };
 
   const columns = [
-    { field: 'userFirstName', headerName: 'First Name', width: 130, editable: true },
-    { field: 'userLastName', headerName: 'Last Name', width: 130, editable: true },
+    { field: 'userFirstName', headerName: 'First Name', editable: true },
+    { field: 'userLastName', headerName: 'Last Name', editable: true },
     { field: 'InsideOutside', headerName: 'Inside/Outside', renderEditCell: renderInOutsideEditInputCell, minWidth: 118, editable: true },
     { field: 'HighLowTable', headerName: 'High/Low Table', minWidth: 124, editable: true },
     { field: 'NoOfPeople', headerName: '# of ppl', width: 74, type: 'number', editable: true },
